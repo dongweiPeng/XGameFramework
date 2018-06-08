@@ -51,5 +51,47 @@ namespace Utility
             }
             return result;
         }
+        
+         /// <summary>
+        /// 居中排序, 中间大与否取决于result的排序
+        /// 如果result降序则中间大 两边小
+        /// 如果result升序则中间小 两边大
+        /// </summary>
+        /// <param name="result"></param>
+        /// <returns></returns>
+        public int[] MiddleSort(List<int> result) {
+
+            int[] array = new int[result.Count];
+            int midIdx = array.Length / 2;
+            int leftIdx = 0;
+            int rightIdx = 0;
+            bool middle = true;
+            bool left = true;
+            bool right = false;
+            foreach (var value in result)
+            {
+                if (middle)
+                {
+                    array[midIdx] = value;
+                    middle = false;
+
+                }
+                else if (left)
+                {
+                    leftIdx++;
+                    array[midIdx - leftIdx] = value;
+                    left = false;
+                    right = true;
+                }
+                else if (right)
+                {
+                    rightIdx++;
+                    array[midIdx + rightIdx] = value;
+                    left = true;
+                    right = false;
+                }
+            }
+            return array;
+        }
     }
 }
