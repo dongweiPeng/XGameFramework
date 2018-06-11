@@ -10,3 +10,26 @@
 <lio><b>Unity类</b></lio>： StringLengthIgnoreColor 无视颜色的取字符串长度， 添加和删除脚本以及脚本归一化操作等
 
 <lio><b>验证类</b></lio>：Md5验证，数字验证，网络验证 等等
+
+## 任务Task
+
+任务类型：不同类型的任务流程，并自动完成对任务的重置，以便下次再次使用任务，可以拷贝Task文件夹独立使用
+
+基于<lio><b>时间条件</b></lio>的任务： TimeCondition
+
+基于<lio><b>次数条件</b></lio>的任务</b></lio>： TimesCondition
+
+基于<lio><b>事件条件</b></lio>的任务</b></lio>： EvnetCondition
+
+基于<lio><b>按钮触发器条件</b></lio>的任务</b></lio>： TriggerCondition
+
+使用参考：<lio><b>TaskManager</b></lio>
+
+## 缓存池 Pool
+
+这玩意是大名鼎鼎的<b>PoolManager</b>，别人的东西我也不介绍了，具体查看使用即可
+
+## 事件系统 Event
+
+简单的事件管理器
+
