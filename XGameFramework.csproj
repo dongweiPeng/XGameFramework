@@ -304,8 +304,6 @@
     <Compile Include="Assets\Scripts\Base\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Event\EventsMgr.cs" />
     <Compile Include="Assets\Scripts\Event\EventsType.cs" />
-    <Compile Include="Assets\Scripts\Pool\ObjectPool\IPoolReset.cs" />
-    <Compile Include="Assets\Scripts\Pool\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Pool\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Pool\PreRuntimePoolItem.cs" />
     <Compile Include="Assets\Scripts\Pool\SpawnPool.cs" />

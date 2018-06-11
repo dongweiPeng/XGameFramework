@@ -59,7 +59,7 @@ namespace Utility
         /// </summary>
         /// <param name="result"></param>
         /// <returns></returns>
-        public int[] MiddleSort(List<int> result) {
+        public static int[] MiddleSort(List<int> result) {
 
             int[] array = new int[result.Count];
             int midIdx = array.Length / 2;
