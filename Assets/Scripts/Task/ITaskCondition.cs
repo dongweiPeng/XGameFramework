@@ -6,7 +6,7 @@ using UnityEngine;
 /// 任务的抽象条件
 /// </summary>
 
-namespace Task
+namespace XFramework.Task
 {
     public interface ITaskCondition : IReset
     {

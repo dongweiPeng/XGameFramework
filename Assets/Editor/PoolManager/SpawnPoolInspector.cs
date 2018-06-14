@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using Pool;
+using XFramework.Pool;
 
 [CustomEditor(typeof(SpawnPool))]
 public class SpawnPoolInspector : Editor

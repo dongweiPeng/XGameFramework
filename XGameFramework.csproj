@@ -252,6 +252,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>Assets/Library/Protobuf/protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/dongwei/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -304,6 +307,18 @@
     <Compile Include="Assets\Scripts\Base\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Event\EventsMgr.cs" />
     <Compile Include="Assets\Scripts\Event\EventsType.cs" />
+    <Compile Include="Assets\Scripts\Net\ByteBuffer.cs" />
+    <Compile Include="Assets\Scripts\Net\CmdNumber.cs" />
+    <Compile Include="Assets\Scripts\Net\INetManager.cs" />
+    <Compile Include="Assets\Scripts\Net\IPConvert.cs" />
+    <Compile Include="Assets\Scripts\Net\Locker.cs" />
+    <Compile Include="Assets\Scripts\Net\Message.cs" />
+    <Compile Include="Assets\Scripts\Net\MessageQueue.cs" />
+    <Compile Include="Assets\Scripts\Net\NetDefine.cs" />
+    <Compile Include="Assets\Scripts\Net\NetManager.cs" />
+    <Compile Include="Assets\Scripts\Net\NetProcessor.cs" />
+    <Compile Include="Assets\Scripts\Net\NetSocket.cs" />
+    <Compile Include="Assets\Scripts\Net\NetThread.cs" />
     <Compile Include="Assets\Scripts\Pool\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Pool\PreRuntimePoolItem.cs" />
     <Compile Include="Assets\Scripts\Pool\SpawnPool.cs" />

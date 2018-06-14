@@ -4,18 +4,26 @@
 using UnityEngine;
 using System.Collections;
 
-public class ISingleton<T> where T:class, new(){
-	private static T instance;
-	private static readonly object syslock = new object();
+namespace XFramework
+{
+    public class ISingleton<T> where T : class, new()
+    {
+        private static T instance;
+        private static readonly object syslock = new object();
 
-	public static T Instance(){
-		if(instance==null){
-			lock(syslock){
-				if(instance==null){
-					instance = new T();
-				}
-			}
-		}
-		return instance;
-	}
+        public static T Instance()
+        {
+            if (instance == null)
+            {
+                lock (syslock)
+                {
+                    if (instance == null)
+                    {
+                        instance = new T();
+                    }
+                }
+            }
+            return instance;
+        }
+    }
 }

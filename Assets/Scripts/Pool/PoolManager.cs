@@ -8,10 +8,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 //using System.Diagnostics;
-
-namespace Pool
+namespace XFramework.Pool
 {
-
     /// <description>
     /// PoolManager v2.0
     ///  - PoolManager.Pools is not a complete implimentation of the IDictionary interface

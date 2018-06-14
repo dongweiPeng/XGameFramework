@@ -5,7 +5,7 @@ using System;
 /// <summary>
 /// 任务携程
 /// </summary>
-namespace Task
+namespace XFramework.Task
 {
     public class TaskCoroutine : MonoBehaviour
     {

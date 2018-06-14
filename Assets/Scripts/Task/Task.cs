@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 任务
 /// </summary>
-namespace Task
+namespace XFramework.Task
 {
     public class Task : IEnumerator,IReset
     {

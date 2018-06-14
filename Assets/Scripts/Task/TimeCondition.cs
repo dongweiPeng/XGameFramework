@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 时间作为任务条件
 /// </summary>
-namespace Task {
+namespace XFramework.Task {
     public class TimeCondition : ITaskCondition
     {
         private float m_duration;

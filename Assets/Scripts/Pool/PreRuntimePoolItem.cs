@@ -9,7 +9,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-namespace Pool
+
+namespace XFramework.Pool
 {
     /// <description>
     /// Adds an instance which is already a part of a scene to a pool on game start

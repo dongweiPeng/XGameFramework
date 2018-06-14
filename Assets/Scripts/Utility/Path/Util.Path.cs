@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Unity 路径相关的工具
 /// </summary>
-namespace Utility
+namespace XFramework.Utility
 {
     public static partial class Util
     {

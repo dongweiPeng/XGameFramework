@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Utility
+namespace XFramework.Utility
 {
     /// <summary>
     /// Unity本身相关的工具类

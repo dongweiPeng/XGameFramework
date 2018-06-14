@@ -3,6 +3,8 @@
 /// </summary>
 using UnityEngine;
 using System.Collections.Generic;
+
+namespace XFramework {
 public class EventsMgr  {
 
     private static EventsMgr instance;
@@ -101,4 +103,5 @@ public class EventsMgr  {
             callback();
         }
     } 
+}
 }

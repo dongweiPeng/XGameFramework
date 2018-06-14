@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Task
+namespace XFramework.Task
 {
     public interface IReset
     {

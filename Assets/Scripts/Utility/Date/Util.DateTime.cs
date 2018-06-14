@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-namespace Utility
+namespace XFramework.Utility
 {
     /// <summary>
     /// 日期相关的工具类

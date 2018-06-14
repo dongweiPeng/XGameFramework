@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Task;
+using XFramework.Task;
 
 public class TestTask : MonoBehaviour {
-    Queue<Task.Task> taskQueue = new Queue<Task.Task>();
+    Queue<XFramework.Task.Task> taskQueue = new Queue<XFramework.Task.Task>();
     public Button btn;
-    Task.Task curTask;
-    Task.Task task2;
+    XFramework.Task.Task curTask;
+    XFramework.Task.Task task2;
 
     IEnumerator Start () {
-        Task.Task task1 = new Task.Task("第一个任务 时间任务，间隔两秒", new TimeCondition(1.0f));
+        XFramework.Task.Task task1 = new XFramework.Task.Task("第一个任务 时间任务，间隔两秒", new TimeCondition(1.0f));
         TaskManager.Instance().AddTask(task1);
 
         //
-        task2 = task2 ?? new Task.Task("第二个任务 次数任务，3", new TimesCondition(3));
-        task2 = new Task.Task("第二个任务 次数任务，3", new TimesCondition(3));
-        Task.Task task3 = new Task.Task("第三个任务 点击按钮",  new TirggerCondition(btn));
+        task2 = task2 ?? new XFramework.Task.Task("第二个任务 次数任务，3", new TimesCondition(3));
+        task2 = new XFramework.Task.Task("第二个任务 次数任务，3", new TimesCondition(3));
+        XFramework.Task.Task task3 = new XFramework.Task.Task("第三个任务 点击按钮",  new TirggerCondition(btn));
         TaskManager.Instance().AddTask(task2);
         TaskManager.Instance().AddTask(task3);
 

@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Utility
+namespace XFramework.Utility
 {
     /// <summary>
     /// 校验相关的工具类

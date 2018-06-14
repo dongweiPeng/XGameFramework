@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Task;
 using System;
 
 /// <summary>
 /// 目前只支持单任务链的管理
 /// </summary>
-namespace Task
+namespace XFramework.Task
 {
     public class TaskManager : ISingleton<TaskManager>
     {
