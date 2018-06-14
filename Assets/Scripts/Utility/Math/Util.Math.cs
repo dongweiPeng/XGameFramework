@@ -93,5 +93,24 @@ namespace Utility
             }
             return array;
         }
+        
+    /// <summary>
+    /// 求三角形Sin值（z值）
+    /// </summary>
+    /// <param name="angle">角度</param>
+    /// <returns></returns>
+    public static float SinValue(float angle) {
+       return  Mathf.Sin(Mathf.PI / 180 * angle);
+    }
+
+    /// <summary>
+    ///  求三角形Cos值（z值）
+    /// </summary>
+    /// <param name="angle">角度</param>
+    /// <returns></returns>
+    public static float CosValue(float angle)
+    {
+        return Mathf.Cos(Mathf.PI / 180 * angle);
+    }
     }
 }
