@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 513508824
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ffe9a0eff9ba427a753868f86b99641d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/PackRoot/ConfigData/Name.txt
+Dependencies: []

@@ -18,6 +18,7 @@ namespace XFramework.Utility
         {
             get
             {
+                /*
                 //编辑器内测试不同平台的逻辑bug， 表现无法测试，必须到真实平台测试
                 #if PC_RUN_ANDROID || PC_RUN_IOS || PC_RUN_WINDOWS
 		    		return Application.persistentDataPath + "/" + game + "/"+GetPlatformFolder()+"/";
@@ -35,7 +36,7 @@ namespace XFramework.Utility
                 if (Application.platform == RuntimePlatform.WindowsEditor)
                 {
                     return Application.dataPath + "/" + GetPlatformFolder() + "/";
-                }
+                }*/
                 return "c:/";
             }
         }

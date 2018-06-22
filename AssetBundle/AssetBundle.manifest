@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3247276635
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets/packroot/configdata/name_ab
+      Dependencies: {}
+    Info_1:
+      Name: assets/packroot/material/rolemat_ab
+      Dependencies: {}
+    Info_2:
+      Name: assets/packroot/model/rolemodel_ab
+      Dependencies: {}
+    Info_3:
+      Name: assets/scenes/battlescene_ab
+      Dependencies: {}
+    Info_4:
+      Name: assets/scenes/battlescene.unityconfig_ab
+      Dependencies: {}
+    Info_5:
+      Name: assets/packroot/sceneobject/slider_ab
+      Dependencies: {}
