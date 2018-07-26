@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     public class AssetBundleMenu : MonoBehaviour
     {

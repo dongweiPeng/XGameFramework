@@ -12,7 +12,7 @@ using System.IO;
 using System;
 using System.Collections.Generic;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     public class AssetBundleBuildWindow : EditorWindow
     {

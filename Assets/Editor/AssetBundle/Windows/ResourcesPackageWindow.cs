@@ -11,7 +11,7 @@ using UnityEditor;
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     public class ResourcesPackageWindow : EditorWindow
     {

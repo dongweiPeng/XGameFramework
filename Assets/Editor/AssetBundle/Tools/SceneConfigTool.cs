@@ -12,7 +12,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
 
     public class SceneConfigTool

@@ -252,6 +252,15 @@
     <Reference Include="SimpleJson">
       <HintPath>Assets/Plugins/SimpleJson.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets/Plugins/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/Plugins/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/Plugins/DOTween/DOTween50.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/dongwei/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -304,71 +313,89 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Base\ISingleton.cs" />
-    <Compile Include="Assets\Scripts\Base\MonoSingleton.cs" />
-    <Compile Include="Assets\Scripts\Event\EventsMgr.cs" />
-    <Compile Include="Assets\Scripts\Event\EventsType.cs" />
-    <Compile Include="Assets\Scripts\Net\ByteBuffer.cs" />
-    <Compile Include="Assets\Scripts\Net\CmdNumber.cs" />
-    <Compile Include="Assets\Scripts\Net\INetManager.cs" />
-    <Compile Include="Assets\Scripts\Net\IPConvert.cs" />
-    <Compile Include="Assets\Scripts\Net\Locker.cs" />
-    <Compile Include="Assets\Scripts\Net\Message.cs" />
-    <Compile Include="Assets\Scripts\Net\MessageQueue.cs" />
-    <Compile Include="Assets\Scripts\Net\NetDefine.cs" />
-    <Compile Include="Assets\Scripts\Net\NetManager.cs" />
-    <Compile Include="Assets\Scripts\Net\NetProcessor.cs" />
-    <Compile Include="Assets\Scripts\Net\NetSocket.cs" />
-    <Compile Include="Assets\Scripts\Net\NetThread.cs" />
-    <Compile Include="Assets\Scripts\Pool\PoolManager.cs" />
-    <Compile Include="Assets\Scripts\Pool\PreRuntimePoolItem.cs" />
-    <Compile Include="Assets\Scripts\Pool\SpawnPool.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\AssetBundleManager.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Common.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\DownloadCacheData.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\ResourcesManifestData.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\ResourcesPackagesData.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\SceneConfigData.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Download\AssetBundleDownloader.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Detail\ErrorCode.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\LoadPattern.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\PackageDownloader.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\ResourcesManager.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\SceneResourcesManager.cs" />
-    <Compile Include="Assets\Scripts\Resource\AssetBundlePacker\Scripts\Updater.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Common\MonoSingleton.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Compress\Compress.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Download\FileDownload.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Download\HttpAsyDownload.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Download\URLVerify.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Download\WebRequestExtensions.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Engine\CoroutineExecutor.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\File\FileHelper.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Platform\Platform.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\SimpleJson\SimpleJsonReader.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\SimpleJson\SimpleJsonWriter.cs" />
-    <Compile Include="Assets\Scripts\Resource\Core\Utility\Swap.cs" />
-    <Compile Include="Assets\Scripts\Resource\UpdateView.cs" />
-    <Compile Include="Assets\Scripts\Task\EventCondition.cs" />
-    <Compile Include="Assets\Scripts\Task\IReset.cs" />
-    <Compile Include="Assets\Scripts\Task\ITaskCondition.cs" />
-    <Compile Include="Assets\Scripts\Task\LogicCondition.cs" />
-    <Compile Include="Assets\Scripts\Task\Task.cs" />
-    <Compile Include="Assets\Scripts\Task\TaskCoroutine.cs" />
-    <Compile Include="Assets\Scripts\Task\TaskManager.cs" />
-    <Compile Include="Assets\Scripts\Task\TestTask.cs" />
-    <Compile Include="Assets\Scripts\Task\TimeCondition.cs" />
-    <Compile Include="Assets\Scripts\Task\TimesCondition.cs" />
-    <Compile Include="Assets\Scripts\Task\TirggerCondition.cs" />
-    <Compile Include="Assets\Scripts\Utility\Date\Util.DateTime.cs" />
-    <Compile Include="Assets\Scripts\Utility\Math\Util.Math.cs" />
-    <Compile Include="Assets\Scripts\Utility\Path\Util.Path.cs" />
-    <Compile Include="Assets\Scripts\Utility\Unity\Util.Unity.cs" />
-    <Compile Include="Assets\Scripts\Utility\Verify\Util.Verify.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\UIFrame.cs" />
+    <Compile Include="Assets\Scripts\UI\BagUI.cs" />
+    <Compile Include="Assets\Scripts\UI\LoginPanel.cs" />
+    <Compile Include="Assets\Scripts\UI\MainCityPanel.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopPanel.cs" />
+    <Compile Include="Assets\Scripts\UIDefine.cs" />
     <Compile Include="Assets\TestPath.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Base\ISingleton.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Base\MonoSingleton.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Data\DataManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Data\LocalDataManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Define\AssetDefine.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Event\EventsMgr.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Event\EventsType.cs" />
+    <Compile Include="Assets\XFramework\Scripts\ExcelParse\ProtoTool.cs" />
+    <Compile Include="Assets\XFramework\Scripts\GameManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\ByteBuffer.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\CmdNumber.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\INetManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\IPConvert.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\Locker.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\Message.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\MessageQueue.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\NetDefine.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\NetManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\NetProcessor.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\NetSocket.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Net\NetThread.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Pool\PoolManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Pool\PreRuntimePoolItem.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Pool\SpawnPool.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\AssetBundleManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Common.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\DownloadCacheData.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\ResourcesManifestData.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\ResourcesPackagesData.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Data\SceneConfigData.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\Download\AssetBundleDownloader.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Detail\ErrorCode.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\LoadPattern.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\PackageDownloader.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\ResourcesManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\SceneResourcesManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\AssetBundlePacker\Scripts\Updater.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Compress\Compress.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Download\FileDownload.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Download\HttpAsyDownload.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Download\URLVerify.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Download\WebRequestExtensions.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Engine\CoroutineExecutor.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\File\FileHelper.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\Platform\Platform.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\SimpleJson\SimpleJsonReader.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\Core\SimpleJson\SimpleJsonWriter.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Resource\UpdateView.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\EventCondition.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\IReset.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\ITaskCondition.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\LogicCondition.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\Task.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\TaskCoroutine.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\TaskManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\TestTask.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\TimeCondition.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\TimesCondition.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Task\TirggerCondition.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\Frame\FrameItem.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\Frame\UIFrame.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\UIManager.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\UIMessageBox.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\UIWndBase.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Utility\Date\Util.DateTime.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Utility\Math\Util.Math.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Utility\Path\Util.Path.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Utility\Unity\Util.Unity.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Utility\Verify\Util.Verify.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PackRoot\ConfigData\Name.txt" />
+    <None Include="Assets\Plugins\DOTween\DOTween.XML" />
+    <None Include="Assets\Plugins\DOTween\DOTween43.xml" />
+    <None Include="Assets\Plugins\DOTween\DOTween50.xml" />
+    <None Include="Assets\Plugins\DOTween\readme.txt" />
     <None Include="Assets\Scenes\BattleScene.unityConfig.txt" />
     <None Include="C:\Users\dongwei\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\dongwei\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />

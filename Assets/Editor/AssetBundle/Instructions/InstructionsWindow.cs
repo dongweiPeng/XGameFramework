@@ -33,7 +33,7 @@ public class InstructionsWindow : EditorWindow
       + "  资源包配置文件会自动打包至安装包中，或者通过Updater下载更新资源包配置文件。\n"
       + "  插件提供PackageDownloader供游戏中下载指定资源包。\n\n"
       + "插件需手动配置的事项\n"
-      + "1. 增加命名为\"" + zcode.AssetBundlePacker.SceneConfigTool.SERIALIZE_SCENE_OBJECT_TAG + "\"的GameObject's Tag（Edit->Project Settings->Tags and Layers）\n\n\n\n"
+      + "1. 增加命名为\"" + XFramework.AssetBundlePacker.SceneConfigTool.SERIALIZE_SCENE_OBJECT_TAG + "\"的GameObject's Tag（Edit->Project Settings->Tags and Layers）\n\n\n\n"
       + "FAQ\n"
       + "1. 游戏中如何使用打包后的AssetBundle?\n"
       + "      插件自带的例子包含详细的使用方试\n"

@@ -38,7 +38,6 @@ public class TestPath : MonoBehaviour {
 
 
     IEnumerator Copy(string src, string dest) {
-        Debug.Log("==========>");
         using (WWW w = new WWW(src))
         {
             yield return w;
@@ -48,7 +47,7 @@ public class TestPath : MonoBehaviour {
             {
                 while (w.isDone == false)
                     yield return null;
-                zcode.FileHelper.CopyStreamingAssetsToFile(src, dest);
+                XFramework.FileHelper.CopyStreamingAssetsToFile(src, dest);
                 Debug.Log("成功准备拷贝数据：" + w.text + " 到" + dest);
             }
             else
@@ -58,7 +57,4 @@ public class TestPath : MonoBehaviour {
             StopAllCoroutines();
         }
     }
-    
-
-  
 }

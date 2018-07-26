@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using System.IO;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     public static class AssetBundleNameTool
     {

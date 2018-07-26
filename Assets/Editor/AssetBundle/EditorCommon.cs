@@ -8,7 +8,7 @@ using UnityEngine;
 using System.Collections;
 using System.Runtime.Serialization;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     /// <summary>
     ///   AssetBundle打包策略

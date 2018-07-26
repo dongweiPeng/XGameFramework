@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FixedSceneObject
+  - UIRoot
+  - UICamera
   layers:
   - Default
   - TransparentFX

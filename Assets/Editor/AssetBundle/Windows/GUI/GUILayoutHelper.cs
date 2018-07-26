@@ -8,7 +8,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEditor;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     public class GUILayoutHelper
     {

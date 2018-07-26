@@ -10,7 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace zcode.AssetBundlePacker
+namespace XFramework.AssetBundlePacker
 {
     /// <summary>
     /// 
@@ -127,7 +127,7 @@ namespace zcode.AssetBundlePacker
 
                     //重写ResourcesManifest数据
                     var ab = resources_manifest.Data.AssetBundles[name];
-                    ab.CompressSize = zcode.FileHelper.GetFileSize(Compress.GetCompressFileName(file_name));
+                    ab.CompressSize = XFramework.FileHelper.GetFileSize(Compress.GetCompressFileName(file_name));
 
                     action = "Compress";
                 }
@@ -156,7 +156,7 @@ namespace zcode.AssetBundlePacker
             string file = Common.RESOURCES_PACKAGE_FILE_NAME;
             string src_file_name = EditorCommon.BUILD_PATH + "/" + file;
             string dest_file_name = Common.INITIAL_PATH + "/" + file;
-            bool result = zcode.FileHelper.CopyFile(src_file_name, dest_file_name, true);
+            bool result = XFramework.FileHelper.CopyFile(src_file_name, dest_file_name, true);
             if(result)
                 AssetDatabase.Refresh();
 
@@ -180,7 +180,7 @@ namespace zcode.AssetBundlePacker
             if (!Directory.Exists(Common.INITIAL_PATH))
                 Directory.CreateDirectory(Common.INITIAL_PATH);
             else
-                zcode.FileHelper.DeleteAllChild(Common.INITIAL_PATH
+                XFramework.FileHelper.DeleteAllChild(Common.INITIAL_PATH
                     , FileAttributes.Hidden | FileAttributes.System);
 
             //拷贝所有配置文件
@@ -195,7 +195,7 @@ namespace zcode.AssetBundlePacker
                     EditorUtility.ClearProgressBar();
                     return false;
                 }
-                zcode.FileHelper.CopyFile(src_file_name, dest_file_name, true);
+                XFramework.FileHelper.CopyFile(src_file_name, dest_file_name, true);
             }
             
             //拷贝AssetBundle文件
@@ -213,7 +213,7 @@ namespace zcode.AssetBundlePacker
 
                 if (desc.IsNative)
                 {
-                    zcode.FileHelper.CopyFile(EditorCommon.BUILD_PATH + "/" + desc.AssetBundleName
+                    XFramework.FileHelper.CopyFile(EditorCommon.BUILD_PATH + "/" + desc.AssetBundleName
                             , Common.INITIAL_PATH + "/" + desc.AssetBundleName, true);
                 }
 
@@ -247,7 +247,7 @@ namespace zcode.AssetBundlePacker
                 //读取主AssetBundle
                 ResourcesManifestData.AssetBundle desc = new ResourcesManifestData.AssetBundle();
                 desc.AssetBundleName = Common.MAIN_MANIFEST_FILE_NAME;
-                desc.Size = zcode.FileHelper.GetFileSize(root_dir + Common.MAIN_MANIFEST_FILE_NAME);
+                desc.Size = XFramework.FileHelper.GetFileSize(root_dir + Common.MAIN_MANIFEST_FILE_NAME);
                 info.Data.AssetBundles.Add(Common.MAIN_MANIFEST_FILE_NAME, desc);
 
                 //读取其它AssetBundle
@@ -255,7 +255,7 @@ namespace zcode.AssetBundlePacker
                 {
                     desc = new ResourcesManifestData.AssetBundle();
                     desc.AssetBundleName = name;
-                    desc.Size = zcode.FileHelper.GetFileSize(root_dir + name);
+                    desc.Size = XFramework.FileHelper.GetFileSize(root_dir + name);
                     AssetBundle ab = AssetBundle.LoadFromFile(root_dir + name);
                     foreach (var asset in ab.GetAllAssetNames())
                     {
