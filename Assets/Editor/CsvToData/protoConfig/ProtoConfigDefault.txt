@@ -1,0 +1,1 @@
+/../../designer/data	/Assets/Resources/ConfigData	/Assets/Scripts/GenerateCodes	/Assets/Editor/CsvToData/commdefProto	/csv2Data/tools

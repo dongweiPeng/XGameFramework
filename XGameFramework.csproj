@@ -391,6 +391,8 @@
     <Compile Include="Assets\XFramework\Scripts\Utility\Verify\Util.Verify.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\CsvToData\protoConfig\ProtoConfig.txt" />
+    <None Include="Assets\Editor\CsvToData\protoConfig\ProtoConfigDefault.txt" />
     <None Include="Assets\PackRoot\ConfigData\Name.txt" />
     <None Include="Assets\Plugins\DOTween\DOTween.XML" />
     <None Include="Assets\Plugins\DOTween\DOTween43.xml" />

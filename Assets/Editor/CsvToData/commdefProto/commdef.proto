@@ -1,0 +1,55 @@
+package commdef;
+
+enum SexType
+{
+	female = 0;
+	male = 1;
+}
+
+enum LeaderboardType
+{
+	none_board = 0;
+	battle_power = 1;
+	region_level = 2;
+}
+
+enum SkillTrigType{
+	buff=0;
+	debuff=1;
+}
+
+enum SkillType{
+	none =0;
+	sword=1;
+	fist=2;
+	knife=3;
+	talent =10;
+	pet=11;
+	QTE=12;
+	zhengwu=13;
+	moster=14;
+}
+
+enum SkillTargetType{
+	enemy=0;
+	self=1;
+	selfAndTeammate=2;
+}
+
+enum SkillSlot{
+	noramlAtk=0;
+	skill1 =1;
+	skill2 =2;
+	skill3 =3;
+	weapon =4;
+	zhengwuslot =5;
+}
+
+enum Rules
+{
+	Limitation_PlayerLevel = 0;
+	Limitation_ColdDown = 1;
+}
+
+
+

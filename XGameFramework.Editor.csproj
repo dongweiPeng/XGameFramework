@@ -386,12 +386,19 @@
     <Compile Include="Assets\Editor\AssetBundle\Windows\GUI\GUILayoutHelper.cs" />
     <Compile Include="Assets\Editor\AssetBundle\Windows\GUI\GUILayoutMultiSelectGroup.cs" />
     <Compile Include="Assets\Editor\AssetBundle\Windows\ResourcesPackageWindow.cs" />
+    <Compile Include="Assets\Editor\BaseListWindow.cs" />
+    <Compile Include="Assets\Editor\CsvToData\Scripts\BuildProtoListWindow.cs" />
+    <Compile Include="Assets\Editor\CsvToData\Scripts\ProtoSetting\ProtoBuilder.cs" />
+    <Compile Include="Assets\Editor\CsvToData\Scripts\ProtoSetting\ProtoSetting.cs" />
     <Compile Include="Assets\Editor\Default\ScriptInitializer.cs" />
+    <Compile Include="Assets\Editor\EditorConfig.cs" />
     <Compile Include="Assets\Editor\PoolManager\Common\PGEditorUtils.cs" />
     <Compile Include="Assets\Editor\PoolManager\PreRuntimePoolItemInspector.cs" />
     <Compile Include="Assets\Editor\PoolManager\SpawnPoolInspector.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\CsvToData\protoConfig\ProtoConfig.txt" />
+    <None Include="Assets\Editor\CsvToData\protoConfig\ProtoConfigDefault.txt" />
     <None Include="Assets\PackRoot\ConfigData\Name.txt" />
     <None Include="Assets\Plugins\DOTween\DOTween.XML" />
     <None Include="Assets\Plugins\DOTween\DOTween43.xml" />

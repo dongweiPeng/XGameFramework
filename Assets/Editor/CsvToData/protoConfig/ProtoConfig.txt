@@ -1,0 +1,1 @@
+D:/sakura/share/excel	D:/sakura/sakura_client/Assets/Resources/ConfigData	D:/sakura/sakura_client/Assets/Scripts/GenerateCodes	D:/sakura/sakura_client/Assets/Editor/CsvToData/commdefProto	D:/sakura/sakura_client/csv2Data/tools

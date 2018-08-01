@@ -326,6 +326,8 @@
     <Compile Include="Assets\Plugins\7zip\ICoder.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\CsvToData\protoConfig\ProtoConfig.txt" />
+    <None Include="Assets\Editor\CsvToData\protoConfig\ProtoConfigDefault.txt" />
     <None Include="Assets\PackRoot\ConfigData\Name.txt" />
     <None Include="Assets\Plugins\DOTween\DOTween.XML" />
     <None Include="Assets\Plugins\DOTween\DOTween43.xml" />
