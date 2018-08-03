@@ -40,4 +40,7 @@
 
 ## UI框架 + 通用的可配置的UIFrame
 
+## 计时器（基于UnityTimer）
+使用参考：<lio><b>TestTimer</b></lio>
+
 ![麻辣烫配老冰棍很爽](https://github.com/dongweiPeng/XGameFramework/blob/master/QQ%E5%9B%BE%E7%89%8720180730104427.png)
