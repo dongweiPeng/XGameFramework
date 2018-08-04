@@ -16,7 +16,7 @@ public enum WindowID : int{
     PhonePanel,
     PetPanel,
     HaoGanPanel,
-    ShopPanel,
+    ShopPanel= 1004,
 }
 
 //消息

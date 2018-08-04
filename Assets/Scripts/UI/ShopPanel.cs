@@ -7,19 +7,37 @@ Note :
 
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.UI;
 using XFramework.UI;
 
 public class ShopPanel : UIWndBase
 {
+    public DynamicInfinityListRenderer m_LoopList;
+    List<int> m_datas = new List<int>();
+    int m_SelectedData;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    private void Awake()
+    {
+        for (int i = 0; i < 20; ++i)
+        {
+            m_datas.Add(i);
+        }
+        m_LoopList.InitRendererList(OnSelectHandler, OnUpdateHandler);
+        m_LoopList.SetDataProvider(m_datas);
+    }
+
+    void OnSelectHandler(DynamicInfinityItem item)
+    {
+        print("on select " + item.ToString());
+        m_SelectedData = (int)item.GetData();
+        m_LoopList.GetDataProvider().Remove(m_SelectedData);
+        m_LoopList.RefreshDataProvider();
+
+    }
+
+    void OnUpdateHandler(DynamicInfinityItem item)
+    {
+        print("on upadte " + item.ToString());
+    }
 }

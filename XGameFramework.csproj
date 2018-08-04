@@ -313,6 +313,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LoopListExample\Code\LoopListExample.cs" />
     <Compile Include="Assets\Scripts\GenerateCodes\UIFrame.cs" />
     <Compile Include="Assets\Scripts\UI\BagUI.cs" />
     <Compile Include="Assets\Scripts\UI\LoginPanel.cs" />
@@ -384,6 +385,9 @@
     <Compile Include="Assets\XFramework\Scripts\Timer\TimerExtensions.cs" />
     <Compile Include="Assets\XFramework\Scripts\UI\Frame\FrameItem.cs" />
     <Compile Include="Assets\XFramework\Scripts\UI\Frame\UIFrame.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\LoopList\DynamicInfinityItem.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\LoopList\DynamicInfinityListRenderer.cs" />
+    <Compile Include="Assets\XFramework\Scripts\UI\LoopList\ItemRender.cs" />
     <Compile Include="Assets\XFramework\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\XFramework\Scripts\UI\UIMessageBox.cs" />
     <Compile Include="Assets\XFramework\Scripts\UI\UIWndBase.cs" />
