@@ -24,6 +24,29 @@ namespace XFramework.Utility
             return (float)System.Math.Round(output_start + (input - input_start) * f, 2);
         }
 
+        /// <summary>
+        /// 随机一个可变最大值范围的数
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns>返回所在数的索引</returns>
+        public static int/*索引*/ RandomRange(List<int> list) {
+            int maxRange=0;
+            foreach (var v in list)
+            {
+                maxRange += v;
+            }
+            int rangeValue = Random.Range(0, maxRange) + 1;
+            int rangeListValue = 0;
+            for (int i = 0; i < list.Count; i++)
+            {
+                rangeListValue += list[i];
+                if (rangeValue <= rangeListValue)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
        /// <summary>
        /// 随机获取不重复的数
@@ -112,6 +135,8 @@ namespace XFramework.Utility
     {
         return Mathf.Cos(Mathf.PI / 180 * angle);
     }
+    
+
     /// <summary>
     /// 交换两个函数
     /// </summary>

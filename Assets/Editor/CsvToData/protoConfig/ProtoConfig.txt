@@ -1,1 +1,1 @@
-D:/sakura/share/excel	D:/sakura/sakura_client/Assets/Resources/ConfigData	D:/sakura/sakura_client/Assets/Scripts/GenerateCodes	D:/sakura/sakura_client/Assets/Editor/CsvToData/commdefProto	D:/sakura/sakura_client/csv2Data/tools
+E:/我的游戏/放置类/配置	D:/XGameFramework/Assets/Resources/ConfigData	D:/XGameFramework/Assets/Scripts/GenerateCodes	D:/XGameFramework/Assets/Editor/CsvToData/commdefProto	D:/XGameFramework/csv2Data/tools

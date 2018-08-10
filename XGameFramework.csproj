@@ -313,8 +313,58 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameConfig.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\CommonDialog.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\Event.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\Exp.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\Monster.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\MonsterAttr.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\Section.cs" />
+    <Compile Include="Assets\Scripts\GenerateCodes\Spell.cs" />
     <Compile Include="Assets\Scripts\GenerateCodes\UIFrame.cs" />
+    <Compile Include="Assets\Scripts\Logic\AppMangaer.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\Battle.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\BattleRuntime.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\Buff\Buff.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\Buff\BuffDefence.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\Buff\BuffManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\Buff\IBuff.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\DmgCalc.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\IBattleHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\PostBattle.cs" />
+    <Compile Include="Assets\Scripts\Logic\Battle\PreBattle.cs" />
+    <Compile Include="Assets\Scripts\Logic\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\CurrencyManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\DialogManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\AttributeManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\AttributePoint.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\BattleEntity.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\Monster.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\MonsterManger.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\Player.cs" />
+    <Compile Include="Assets\Scripts\Logic\Entity\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Event\AdventureEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Event\BattleEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Event\EventHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Event\EventManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Event\OtherEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Event\PracticeEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\ExpManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Map\EventUnLockHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Map\IMapUnLock.cs" />
+    <Compile Include="Assets\Scripts\Logic\Map\MapManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Map\SectionUnLockHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Map\TimeUnLockHandler.cs" />
+    <Compile Include="Assets\Scripts\Logic\Save\BaseSave.cs" />
+    <Compile Include="Assets\Scripts\Logic\Save\ISave.cs" />
+    <Compile Include="Assets\Scripts\Logic\Save\SavePlayer.cs" />
+    <Compile Include="Assets\Scripts\Logic\ShowManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\Spell\Spell.cs" />
+    <Compile Include="Assets\Scripts\Logic\Spell\SpellManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\TypeWriter\ColorText.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\UI\BagUI.cs" />
+    <Compile Include="Assets\Scripts\UI\BattleUI.cs" />
     <Compile Include="Assets\Scripts\UI\LoginPanel.cs" />
     <Compile Include="Assets\Scripts\UI\MainCityPanel.cs" />
     <Compile Include="Assets\Scripts\UI\ShopPanel.cs" />
@@ -387,6 +437,7 @@
     <Compile Include="Assets\XFramework\Scripts\Utility\Date\Util.DateTime.cs" />
     <Compile Include="Assets\XFramework\Scripts\Utility\Math\Util.Math.cs" />
     <Compile Include="Assets\XFramework\Scripts\Utility\Path\Util.Path.cs" />
+    <Compile Include="Assets\XFramework\Scripts\Utility\System\Util.System.cs" />
     <Compile Include="Assets\XFramework\Scripts\Utility\Unity\Util.Unity.cs" />
     <Compile Include="Assets\XFramework\Scripts\Utility\Verify\Util.Verify.cs" />
   </ItemGroup>

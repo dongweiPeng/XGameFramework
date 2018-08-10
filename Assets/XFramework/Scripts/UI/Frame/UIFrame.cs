@@ -39,6 +39,7 @@ namespace XFramework.UI
         }
         public void Init(WindowID wndId)
         {
+            m_Button.gameObject.SetActive(wndId!=WindowID.MainCityPanel);
             bool bContain = LocalDataManager.Instance().m_UIFrame_Dict.ContainsKey(wndId.ToString());
             if (!bContain)
             {

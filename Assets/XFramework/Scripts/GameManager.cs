@@ -83,7 +83,7 @@ namespace XFramework
             {
                 LogFramework("结束:本地表格读取");
                 LogFramework("结束:启动流程, 开始加载登录界面");
-                UIManager.Instance.ShowWindow(WindowID.LoginPanel);
+                AppMangaer.Instance().InitGame();
             });
         }
 
